@@ -9,6 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import booking.utility.BrowserUtil;
+
 public class BookTest extends TestBase{
 
     @Test
@@ -41,7 +42,6 @@ public class BookTest extends TestBase{
                 "When: " + checkInTime.format(formatter) + " - " + checkOutTime.format(formatter) + ", 1 night\n" +
                         "Guests:\n" +
                         "2× Adult ";
-        Thread.sleep(3000);
         Assert.assertEquals(actualChartDetails, expectedChartDetails);
     }
 }
